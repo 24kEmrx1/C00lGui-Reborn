@@ -43,7 +43,7 @@ local PageLabel_2 = Instance.new("TextLabel")
 local CloseOpen = Instance.new("TextButton")
 
 c00lguiFE.Name = "c00lguiFE"
-c00lguiFE.Parent = game:GetService("CoreGui").RobloxGui
+c00lguiFE.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 c00lguiFE.ResetOnSpawn = false
 
 Frame.Parent = c00lguiFE
@@ -423,7 +423,7 @@ walkonwall.Position = UDim2.new(0, 75, 0, 132)
 walkonwall.Size = UDim2.new(0.5, 0, 0, 30)
 walkonwall.ZIndex = 2
 walkonwall.Font = Enum.Font.SourceSans
-walkonwall.Text = "Wall Walk"
+walkonwall.Text = "walk on walls"
 walkonwall.TextColor3 = Color3.fromRGB(255, 255, 255)
 walkonwall.TextSize = 14.000
 walkonwall.TextWrapped = true
@@ -437,7 +437,7 @@ blackhole.Position = UDim2.new(0, 1, 0, 165)
 blackhole.Size = UDim2.new(0.479999989, 0, 0, 30)
 blackhole.ZIndex = 2
 blackhole.Font = Enum.Font.SourceSans
-blackhole.Text = "Black Hole"
+blackhole.Text = "blackhole"
 blackhole.TextColor3 = Color3.fromRGB(255, 255, 255)
 blackhole.TextSize = 14.000
 blackhole.TextWrapped = true
@@ -465,7 +465,7 @@ autism.Position = UDim2.new(0, 0, 0, 198)
 autism.Size = UDim2.new(0.479999989, 0, 0, 30)
 autism.ZIndex = 2
 autism.Font = Enum.Font.SourceSans
-autism.Text = "Autism "
+autism.Text = "autism "
 autism.TextColor3 = Color3.fromRGB(255, 255, 255)
 autism.TextSize = 14.000
 autism.TextWrapped = true
@@ -479,7 +479,7 @@ singtheme.Position = UDim2.new(0, 75, 0, 198)
 singtheme.Size = UDim2.new(0.5, 0, 0, 30)
 singtheme.ZIndex = 2
 singtheme.Font = Enum.Font.SourceSans
-singtheme.Text = "Sing c00lkidd Theme"
+singtheme.Text = "sing c00lkidd theme"
 singtheme.TextColor3 = Color3.fromRGB(255, 255, 255)
 singtheme.TextSize = 14.000
 singtheme.TextWrapped = true
@@ -493,7 +493,7 @@ destroychat.Position = UDim2.new(0, 0, 0, 231)
 destroychat.Size = UDim2.new(0.479999989, 0, 0, 30)
 destroychat.ZIndex = 2
 destroychat.Font = Enum.Font.SourceSans
-destroychat.Text = "Destroy Chat"
+destroychat.Text = "destroy chat"
 destroychat.TextColor3 = Color3.fromRGB(255, 255, 255)
 destroychat.TextSize = 14.000
 destroychat.TextWrapped = true
@@ -859,6 +859,7 @@ local function LYRTJ_fake_script() -- CloseOpen.LocalScript
 end
 coroutine.wrap(LYRTJ_fake_script)()
 local function UGSWC_fake_script() -- c00lguiFE.LocalScript 
+	
 	local script = Instance.new('LocalScript', c00lguiFE)
 
 	local bindable = Instance.new("BindableFunction")
